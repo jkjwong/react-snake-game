@@ -1,0 +1,15 @@
+.grid-item {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-left: 0;
+
+    &:first-child {
+        border: 1px solid black;
+    }
+
+    &.active {
+        background-color: black;
+    }
+}
