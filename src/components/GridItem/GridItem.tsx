@@ -3,11 +3,12 @@ import './GridItem.scss';
 
 type GridItemProps = {
     id?: number,
-    active?: boolean
+    active?: boolean,
+    fruit?: boolean
 }
 
-export default function GridItem({ id, active }: GridItemProps) {
+export default function GridItem({ id, active, fruit }: GridItemProps) {
     return(
-        <div className={`grid-item ${active ? 'active' : ''}`}></div>
+        <div className={`grid-item ${active ? 'active' : ''} ${fruit ? 'fruit' : ''}`}></div>
     )
 }
